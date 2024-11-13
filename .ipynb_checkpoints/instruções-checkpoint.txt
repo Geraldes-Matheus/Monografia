@@ -1,0 +1,7 @@
+Instruçoes para rodar o arquivo pp-hh_jets_ana.cc
+
+1- export LD_LIBRARY_PATH=/home/matheusgeraldes/pythia/pythia8312/lib:$LD_LIBRARY_PATH
+
+2) g++ -o pp-hh_jets_ana pp-hh_jets_ana.cc `root-config --cflags --glibs`     -I/home/matheusgeraldes/pythia/pythia8312/include     -L/home/matheusgeraldes/pythia/pythia8312/lib     -lpythia8     -DPY8ROOT
+
+3) ./pp-hh_jets_ana unweighted_events.lhe pp-hh_jets_ana.root
